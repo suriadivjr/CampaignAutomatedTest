@@ -1,0 +1,74 @@
+description: |
+  Memeriksa routing halaman pada navbar halaman home
+actors:
+  - actor: ACTOR1
+    segments:
+      - segment: 1
+        actions:
+          - description: Navigate to the Campaign homepage
+            action: org.getopentest.selenium.NavigateTo
+            args:
+              url: https://campaign.com/
+
+          - description: Klik halaman Tentang Kami
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {css: "a[href='https://www.campaign.com/about/us']"}
+
+      - segment: 2
+        actions:
+          - description: Kembali ke halaman home
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {xpath: "//*[contains(@class,'logo-campaign')]"}
+          
+          - description: Klik dropdown
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {xpath: "//*[contains(@class,'dropdown-toggle descmenunavbar')][contains(text(),'Beri Dukungan')]"}
+
+          - description: Klik halaman organizer
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {css: "a[href='https://www.campaign.com/about/organizer']"}
+
+      - segment: 3
+        actions:
+          - description: Kembali ke halaman home
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {xpath: "//*[contains(@class,'logo-campaign')]"}
+          
+          - description: Klik dropdown
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {xpath: "//*[contains(@class,'dropdown-toggle descmenunavbar')][contains(text(),'Beri Dukungan')]"}
+              
+          - description: Klik halaman sponsor
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {css: "a[href='https://www.campaign.com/about/sponsor']"}
+
+      - segment: 4
+        actions:
+          - description: Kembali ke halaman home
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {xpath: "//*[contains(@class,'logo-campaign')]"}
+
+          - description: Klik halaman ruang pers
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {css: "a[href='https://www.campaign.com/home/pressroom']"}
+
+      - segment: 5
+        actions:
+          - description: Kembali ke halaman home
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {xpath: "//*[contains(@class,'logo-campaign')]"}
+          
+          - description: Klik halaman FAQ
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {css: "a[href='https://www.campaign.com/faq']"}

@@ -1,0 +1,5 @@
+{"name":"1632798880","hostname":"DESKTOP-5KRUNGM","pid":5448,"level":20,"msg":"Sync server version: 1.2.4 2020-09-14 17:52:19 -0500 0aa4a9d288d4ecef4183f4fafe59fb95da7ae967","time":"2021-09-28T03:14:40.462Z","v":0}
+{"name":"1632798880","hostname":"DESKTOP-5KRUNGM","pid":5448,"level":30,"msg":"Acquiring actors for session 1632798880: ACTOR1","time":"2021-09-28T03:14:40.465Z","v":0}
+{"name":"1632798880","hostname":"DESKTOP-5KRUNGM","pid":5448,"level":30,"msg":"Session 1632798880 with label \"Prototyping Automation Test @ Campaign 2\" started at 2021-09-28 03:14:40 UTC","time":"2021-09-28T03:14:40.466Z","v":0}
+{"name":"1632798880","hostname":"DESKTOP-5KRUNGM","pid":5448,"level":30,"actorType":"ACTOR1","actorId":"21924","time":"2021-09-28T03:14:44.541Z","msg":"Actor 21924 of type ACTOR1 was acquired by test session 1632798880","v":0}
+{"name":"1632798880","hostname":"DESKTOP-5KRUNGM","pid":5448,"level":20,"actorType":"ACTOR1","actorId":"21924","time":"2021-09-28T03:14:44.547Z","msg":"DEBUG: Test actor JAR versions:","v":0}

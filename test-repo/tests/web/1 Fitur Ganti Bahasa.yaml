@@ -1,0 +1,33 @@
+description: |
+  Memastikan fitur ganti bahasa dapat berjalan.
+actors:
+  - actor: ACTOR1
+    segments:
+      - segment: 1
+        actions:
+          - description: Navigate to the Campaign homepage
+            action: org.getopentest.selenium.NavigateTo
+            args:
+              url: https://campaign.com/
+
+          - description: Klik teks bahasa untuk mengganti bahasa
+            action: org.getopentest.selenium.Click
+            args:
+              locator: { id: whiteid }
+          
+          - description: Memeriksa apakah tombol unduh sudah berubah menjadi download
+            action: org.getopentest.selenium.AssertElementVisible
+            args:
+              locator: {xpath: "//*[contains(@class,'btn-navbar-download')][contains(text(),'Download')]"}
+
+      - segment: 2
+        actions:
+          - description: Klik teks bahasa untuk mengganti bahasa indonesia
+            action: org.getopentest.selenium.Click
+            args:
+              locator: { id: white }
+          
+          - description: Memeriksa apakah tombol download sudah berubah menjadi unduh
+            action: org.getopentest.selenium.AssertElementVisible
+            args:
+              locator: {xpath: "//*[contains(@class,'btn-navbar-download')][contains(text(),'Unduh')]"}

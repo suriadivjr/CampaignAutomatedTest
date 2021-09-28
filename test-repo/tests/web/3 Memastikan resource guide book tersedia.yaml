@@ -1,0 +1,26 @@
+description: |
+  Memastikan resource guide book tersedia.
+actors:
+  - actor: ACTOR1
+    segments:
+      - segment: 1
+        actions:
+          - description: Navigate to the Campaign organizer page
+            action: org.getopentest.selenium.NavigateTo
+            args:
+              url: https://www.campaign.com/about/organizer
+
+          - description: Klik tombol unduh sekarang untuk mengunduh Guidebook untuk Organizer
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {xpath: "//*[contains(@class,'btn-tim')][contains(text(),'Unduh Sekarang')]"}
+
+      #    - description: Klik tombol unduh sekarang untuk mengunduh Guidebook untuk Supporter
+      #      action: org.getopentest.selenium.Click
+      #      args:
+      #        locator: {css: "a[href='https://drive.google.com/uc?export=download&amp;id=1y28thgx2xUDKll9_i3rHr21VePRf3Yhu']"}
+
+          - description: Klik tombol unduh sekarang untuk mengunduh Satu Resource untuk Semua
+            action: org.getopentest.selenium.Click
+            args:
+              locator: {css: "a[href='https://bit.ly/campaigncommunity']"}

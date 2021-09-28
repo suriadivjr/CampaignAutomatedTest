@@ -1,0 +1,29 @@
+description: |
+  Memastikan textbox pada form berlangganan dapat diisi dan berfungsi.
+actors:
+  - actor: ACTOR1
+    segments:
+      - segment: 1
+        actions:
+          - description: Navigate to the Campaign homepage
+            action: org.getopentest.selenium.NavigateTo
+            args:
+              url: https://campaign.com/
+            
+          - description: Enter email in the email box
+            action: org.getopentest.selenium.SendKeys
+            args:
+              locator: {css: "input[id='mce-EMAIL']"}
+              text: automation00@gmail.com
+
+          - description: Enter email in the email box
+            action: org.getopentest.selenium.SendKeys
+            args:
+              locator: {css: "input[id='mce-FNAME']"}
+              text: automation00
+
+          - description: Klik tombol subscribe
+            action: org.getopentest.selenium.Click
+            args:
+              locator: { id: mc-embedded-subscribe }
+          

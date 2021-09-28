@@ -1,0 +1,3 @@
+{"name":"1632799438","hostname":"DESKTOP-5KRUNGM","pid":20764,"level":20,"msg":"Sync server version: 1.2.4 2020-09-14 17:52:19 -0500 0aa4a9d288d4ecef4183f4fafe59fb95da7ae967","time":"2021-09-28T03:23:58.370Z","v":0}
+{"name":"1632799438","hostname":"DESKTOP-5KRUNGM","pid":20764,"level":30,"msg":"Acquiring actors for session 1632799438: ACTOR1","time":"2021-09-28T03:23:58.373Z","v":0}
+{"name":"1632799438","hostname":"DESKTOP-5KRUNGM","pid":20764,"level":30,"msg":"Session 1632799438 with label \"Test\" started at 2021-09-28 03:23:58 UTC","time":"2021-09-28T03:23:58.376Z","v":0}
